@@ -1,0 +1,22 @@
+# Django specific
+*.log
+*.pot
+*.pyc
+__pycache__/
+db.sqlite3  
+media/      
+
+# Environment variables file
+.env        
+
+# Virtual environment (if you use one)
+.venv/
+venv/
+
+# IDE specific files
+.vscode/
+.idea/
+
+# Operating System files
+.DS_Store
+Thumbs.db

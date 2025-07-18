@@ -1,0 +1,178 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Our Blogs - Fitness{% endblock %}
+
+{% block content %}
+        <div class="container-fluid bg-breadcrumb">
+            <div class="container text-center py-5" style="max-width: 900px;">
+                <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Our Blogs</h4>
+                <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                    <li class="breadcrumb-item"><a href="{% url 'home_page' %}">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                    <li class="breadcrumb-item active text-primary">Blog</li>
+                </ol>    
+            </div>
+        </div>
+        <div class="container-fluid blog py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">  Our Blogs</h4>
+                    <h1 class="display-4 mb-4">Check out our latest stories</h1>
+                    <p class="mb-0">Stay updated with the latest in fitness and wellness through our insightful blog posts. We cover everything from workout tips and nutrition advice to motivational stories and health trends to keep you informed and inspired.
+                    </p>
+                </div>
+                <div class="blog-carousel owl-carousel">
+                    <div class="blog-item wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="blog-img p-4 pb-0">
+                            <a href="#">
+                                <img src="{% static 'img/feature-4.jpg' %}" class="img-fluid w-100" alt="Blog Image 1">
+                            </a>
+                        </div>
+                        <div class="blog-content p-4">
+                            <div class="blog-comment d-flex justify-content-between py-2 px-3 mb-4">
+                                <div class="small"><span class="fa fa-user text-primary me-2"></span> Martin.C</div>
+                                <div class="small"><span class="fa fa-calendar text-primary me-2"></span> 30 Dec 2025</div>
+                            </div>
+                            <a href="#" class="h4 d-inline-block mb-3">Full Body Home Workout</a>
+                            <p class="mb-3">Discover effective full-body workout routines you can do from the comfort of your home, designed to maximize your results with minimal equipment.</p>
+                            <a href="#" class="btn btn-dark py-2 px-4 ms-2"> <span class="me-2">Read More</span>  <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="blog-item wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="blog-img p-4 pb-0">
+                            <a href="#">
+                                <img src="{% static 'img/feature-3.jpg' %}" class="img-fluid w-100" alt="Blog Image 2">
+                            </a>
+                        </div>
+                        <div class="blog-content p-4">
+                            <div class="blog-comment d-flex justify-content-between py-2 px-3 mb-4">
+                                <div class="small"><span class="fa fa-user text-primary me-2"></span> Martin.C</div>
+                                <div class="small"><span class="fa fa-calendar text-primary me-2"></span> 30 Dec 2025</div>
+                            </div>
+                            <a href="#" class="h4 d-inline-block mb-3">31-Day Fitness Calendar</a>
+                            <p class="mb-3">Follow our structured 31-day fitness calendar to establish a consistent workout routine and achieve your monthly fitness milestones effectively.</p>
+                            <a href="#" class="btn btn-dark py-2 px-4 ms-2"> <span class="me-2">Read More</span>  <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="blog-item wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="blog-img p-4 pb-0">
+                            <a href="#">
+                                <img src="{% static 'img/feature-2.jpg' %}" class="img-fluid w-100" alt="Blog Image 3">
+                            </a>
+                        </div>
+                        <div class="blog-content p-4">
+                            <div class="blog-comment d-flex justify-content-between py-2 px-3 mb-4">
+                                <div class="small"><span class="fa fa-user text-primary me-2"></span> Martin.C</div>
+                                <div class="small"><span class="fa fa-calendar text-primary me-2"></span> 30 Dec 2025</div>
+                            </div>
+                            <a href="#" class="h4 d-inline-block mb-3">At Home Ab Workout</a>
+                            <p class="mb-3">Strengthen your core with our specialized at-home ab workout guide, featuring exercises that target all abdominal muscles for a stronger and more toned midsection.</p>
+                            <a href="#" class="btn btn-dark py-2 px-4 ms-2"> <span class="me-2">Read More</span>  <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="blog-item">
+                        <div class="blog-img p-4 pb-0">
+                            <a href="#">
+                                <img src="{% static 'img/feature-1.jpg' %}" class="img-fluid w-100" alt="Blog Image 4">
+                            </a>
+                        </div>
+                        <div class="blog-content p-4">
+                            <div class="blog-comment d-flex justify-content-between py-2 px-3 mb-4">
+                                <div class="small"><span class="fa fa-user text-primary me-2"></span> Martin.C</div>
+                                <div class="small"><span class="fa fa-calendar text-primary me-2"></span> 30 Dec 2025</div>
+                            </div>
+                            <a href="#" class="h4 d-inline-block mb-3">Full Body Home Workout</a>
+                            <p class="mb-3">Discover effective full-body workout routines you can do from the comfort of your home, designed to maximize your results with minimal equipment.</p>
+                            <a href="#" class="btn btn-dark py-2 px-4 ms-2"> <span class="me-2">Read More</span>  <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid explore py-5 wow zoomIn" data-wow-delay="0.2s">
+            <div class="container py-5 text-center">
+                <h1 class="display-1 text-white mb-0"> Explore Fitness Center</h1>
+                <a class="btn btn-primary py-3 px-4 px-md-5 me-2" href="https://www.youtube.com/embed/DWRcNpR6Kdc"><i class="fas fa-play-circle me-2"></i> <span>Watch Video</span></a>
+            </div>
+        </div>
+        <div class="container-fluid team py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Our Trainer</h4>
+                    <h1 class="display-4 mb-4">Meet Our Amazing Team</h1>
+                    <p class="mb-0">Meet our team of highly skilled and passionate trainers, dedicated to guiding you through your fitness journey. Each trainer brings unique expertise and a commitment to helping you achieve your personal best.</p>
+                </div>
+                <div class="row gy-5 gy-lg-4 gx-4">
+                    <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="{% static 'img/team-1.jpg' %}" class="img-fluid w-100" alt="Team Member 1">
+                                <div class="team-icon">
+                                    <a href="#" class="btn btn-primary btn-sm-square"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="btn btn-primary btn-sm-square"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="btn btn-primary btn-sm-square"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" class="btn btn-primary btn-sm-square"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-content">
+                                <h4>Trainer Name</h4>
+                                <p class="mb-0">Profession</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="{% static 'img/team-2.jpg' %}" class="img-fluid w-100" alt="Team Member 2">
+                                <div class="team-icon">
+                                    <a href="#" class="btn btn-primary btn-sm-square"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="btn btn-primary btn-sm-square"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="btn btn-primary btn-sm-square"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" class="btn btn-primary btn-sm-square"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-content">
+                                <h4>Trainer Name</h4>
+                                <p class="mb-0">Profession</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="{% static 'img/team-3.jpg' %}" class="img-fluid w-100" alt="Team Member 3">
+                                <div class="team-icon">
+                                    <a href="#" class="btn btn-primary btn-sm-square"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="btn btn-primary btn-sm-square"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="btn btn-primary btn-sm-square"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" class="btn btn-primary btn-sm-square"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-content">
+                                <h4>Trainer Name</h4>
+                                <p class="mb-0">Profession</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="{% static 'img/team-4.jpg' %}" class="img-fluid w-100" alt="Team Member 4">
+                                <div class="team-icon">
+                                    <a href="#" class="btn btn-primary btn-sm-square"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="btn btn-primary btn-sm-square"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="btn btn-primary btn-sm-square"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" class="btn btn-primary btn-sm-square"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-content">
+                                <h4>Trainer Name</h4>
+                                <p class="mb-0">Profession</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock %}

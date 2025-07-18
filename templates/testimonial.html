@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Testimonial - Fitness{% endblock %}
+
+{% block content %}
+        <div class="container-fluid bg-breadcrumb">
+            <div class="container text-center py-5" style="max-width: 900px;">
+                <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Testimonial</h4>
+                <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                    <li class="breadcrumb-item"><a href="{% url 'home_page' %}">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                    <li class="breadcrumb-item active text-primary">Testimonial</li>
+                </ol>    
+            </div>
+        </div>
+        <div class="container-fluid testimonial bg-dark py-5" style="margin: 90px 0;">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Testimonial</h4>
+                    <h1 class="display-4 text-white">What Our Customers Are Saying</h1>
+                </div>
+                <div class="testimonial-carousel owl-carousel wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="testimonial-item mx-auto" style="max-width: 900px;">
+                        <span class="fa fa-quote-left fa-3x quote-icon"></span>
+                        <div class="testimonial-img mb-4">
+                            <img src="{% static 'img/testimonial-1.jpg' %}" class="img-fluid" alt="Client Testimonial Image 1">
+                        </div>
+                        <p class="fs-4 text-white mb-4">Our members consistently praise the supportive environment and comprehensive facilities at our gym. They often highlight the personalized attention from trainers and the wide variety of classes as key factors in their success and satisfaction.
+                        </p>
+                        <div class="d-block">
+                            <h4 class="text-white">Client Name</h4>
+                            <p class="m-0 pb-3">Profession</p>
+                            <div class="d-flex">
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-white"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item mx-auto" style="max-width: 900px;">
+                        <span class="fa fa-quote-left fa-3x quote-icon"></span>
+                        <div class="testimonial-img mb-4">
+                            <img src="{% static 'img/testimonial-2.jpg' %}" class="img-fluid" alt="Client Testimonial Image 2">
+                        </div>
+                        <p class="fs-4 text-white mb-4">Many of our clients appreciate the clean and well-maintained equipment, as well as the welcoming atmosphere that makes them feel comfortable during their workouts. The flexible class schedules are also a common highlight among our satisfied members.
+                        </p>
+                        <div class="d-block">
+                            <h4 class="text-white">Client Name</h4>
+                            <p class="m-0 pb-3">Profession</p>
+                            <div class="d-flex">
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-white"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item mx-auto" style="max-width: 900px;">
+                        <span class="fa fa-quote-left fa-3x quote-icon"></span>
+                        <div class="testimonial-img mb-4">
+                            <img src="{% static 'img/testimonial-3.jpg' %}" class="img-fluid" alt="Client Testimonial Image 3">
+                        </div>
+                        <p class="fs-4 text-white mb-4">Our gym is highly recommended by members for its motivating environment and the noticeable results they achieve. The variety of training options, from individual coaching to group sessions, receives frequent positive feedback.
+                        </p>
+                        <div class="d-block">
+                            <h4 class="text-white">Client Name</h4>
+                            <p class="m-0 pb-3">Profession</p>
+                            <div class="d-flex">
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-white"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock %}
